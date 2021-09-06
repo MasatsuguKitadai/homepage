@@ -7,48 +7,28 @@ html {
 
 body {
   font-family: "Yu Gothic Medium", "遊ゴシック Medium", "遊ゴシック体", "ヒラギノ角ゴ Pro w3", sans-serif;
-  color: blue;
   margin: 0%;
-  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;  
 }
 
-main {
-    display: flex;
-    justify-content: flex-start;
-}
-
-br {
-    display: none;
-}
-
-map {
-    display: none;
-}
-
-img[src="title.PNG"] {
-    display: none;
-    /*
-    width: auto;
-    height: 200px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-*/
-}
+/* メニューバー */
 
 header {
     position: fixed;
+    width: 50%;
     right: 0px;
     display: flex;
     flex-direction: column;
-    padding-right: 30px;
-    background-color: blue;
+    padding-left: 15px;
+    background-color: #1e90ff;
 }
 
 .menu {
     display: flex;
     justify-content: space-around;
-    background-color: #000;
+    background-color: #000;    
 }
 
 .menu tr {
@@ -56,23 +36,29 @@ header {
 }
 
 .menu tr th {
-    font-size: 18px;
+    font-size: 17px;
+    height: 60px;
 }
 
 .menu tr th a {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-around;
+    margin: auto;
     color: #fff;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    background:rgba(0,0,0,0);
+}
+
+.menu tr th a:hover {
+    color: #1e90ff;
+    cursor: pointer;
+    transform: scale(1.15);
 }
 
 .menu0 {
-    height: 50px;
     width: 170px;
 }
 
 .menu1 {
-    height: 50px;
     width: 170px;
 }
 
@@ -84,16 +70,11 @@ header {
     display: none;
 }
 
-.left {
-    width: 50%;
-    display: flex;
-    flex-direction: column
-}
+/* 共通 */
 
-.right {
-    width: 50%;
+main {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
 }
 
 p {
@@ -102,15 +83,158 @@ p {
 
 font {
     color: #000;
-}
+} 
 
-
-body hr {
+hr {
     display: none;
 }
 
+br {
+    display: none;
+}
+
+map {
+    display: none;
+}
+
+
+/* トップページ */
+
+img[src="title.PNG"] {
+    display: none;
+}
+
+.left {
+    width: 55%;
+    height: 500px;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.left h1 {
+    font-size: 120px;
+    height: 140px;
+    margin: 0px;
+}
+
+.left h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 40px;
+}
+
+.left h3 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    height: 30px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-size: 28px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.left p b {
+    font-size: 110%;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 120px;
+    margin-right: 50px;
+}
+
+.right h4 {
+    color: #454545;
+    font-size: 65px;
+    height: 55px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 90px;
+    padding-bottom: -50px;
+    position: relative;
+    z-index: 5;
+}
+
+.right table {
+    width: 85%;
+    height: 500px;
+    margin: auto;
+    padding: 25px;
+    background-color: #d3d3d3;
+    display: block;
+    overflow-y: scroll;
+    font-size: 18px;
+}
+
+.right table tr td {
+    display: flex;
+    justify-content: left;
+}
+
+.right table tr td img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.right table tr td a {
+    flex: 1;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease 0s;
+    background:rgba(0,0,0,0);
+}
+
+.right table tr td a:hover {
+        color: #1e90ff;
+        cursor: pointer;
+}
+
+.kako {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    border: 2px solid #000;
+}
+
+.kako:hover {
+    color: #000;
+    background-color: #d3d3d3;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* フッター */
+
 footer {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: #000;
+    position: absolute;
+    bottom: 0;
 }

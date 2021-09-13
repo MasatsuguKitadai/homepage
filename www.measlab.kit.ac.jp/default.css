@@ -62,17 +62,18 @@ header {
     width: 170px;
 }
 
-.menu tr th br {
-    display: none;
-  }
-
-.menu br {
-    display: none;
-}
-
 /* 共通 */
 
 main {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     justify-content: flex-start;
 }
@@ -89,16 +90,24 @@ hr {
     display: none;
 }
 
-br {
-    display: none;
-}
-
 map {
     display: none;
 }
 
+em {
+    font-style: normal;
+    font-size: 110%;
+    font-weight: bold;
+    color: crimson;
+}
+
+.chapter {
+    font-size: 18px;
+}
 
 /* トップページ */
+
+
 
 img[src="title.PNG"] {
     display: none;
@@ -110,7 +119,7 @@ img[src="title.PNG"] {
     margin-top: 140px;
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
+    /* padding-left: 5%; */
 }
 
 .left h1 {
@@ -153,7 +162,7 @@ img[src="title.PNG"] {
     flex-direction: column;
     justify-content: space-around;
     margin-top: 120px;
-    margin-right: 50px;
+    /* margin-right: 5%; */
 }
 
 .right h4 {
@@ -203,8 +212,8 @@ img[src="title.PNG"] {
 }
 
 .right table tr td a:hover {
-        color: #1e90ff;
-        cursor: pointer;
+    color: #1e90ff;
+    cursor: pointer;
 }
 
 .kako {
@@ -229,11 +238,125 @@ img[src="title.PNG"] {
     cursor: pointer;
 }
 
+/* Theme */
+
+main a {
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+}
+
+main a:hover {
+    color: #1e90ff;
+    cursor: pointer;
+}
+
+main TABLE {
+    width: 100%;
+    display: block;
+    overflow-x:scroll;
+    background-color: #d3d3d3;
+    margin-top: 30px;
+}
+
+.imagebox {
+    text-align: center;
+    margin: 10px;
+}
+
+video {
+    height: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #000;
+}
+
+.photo {
+    height: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #000;
+}
+
+.caption {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* その他 */
+
+.box {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+.box h3 {
+    font-size: 30px;
+    width: auto;
+    margin: 0%;
+}
+
+main h2 {
+    font-size: 30px;
+    padding-top: 50px;
+    /* padding: 2px 12px; */
+    border-bottom: 3px solid #d3d3d3;
+    /* border-left: 8px solid #1e90ff; */
+}
+
+#a01:first-letter {
+    font-size: 50px;
+    color: #1e90ff;
+    margin-right: 5px;
+}
+
+#a02:first-letter {
+    font-size: 50px;
+    color: #1e90ff;
+    margin-right: 5px;
+}
+
+#a03:first-letter {
+    font-size: 50px;
+    color: #1e90ff;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+main ul {
+    list-style: square;
+    margin: 0%;
+    width: auto;
+}
+
+/* main ul li {
+    height: 40px;
+} */
+
+main ul li a{
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+}
+
+main ul li a:hover{
+    color: #1e90ff;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
 /* フッター */
 
 footer {
     width: 100%;
     height: 40px;
-    position: absolute;
+    position: re;
     bottom: 0;
 }

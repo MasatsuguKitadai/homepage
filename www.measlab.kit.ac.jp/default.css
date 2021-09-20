@@ -10,7 +10,7 @@ body {
   margin: 0%;
   display: flex;
   flex-flow: column;
-  min-height: 100vh;  
+  min-height: 100vh;   
 }
 
 /* メニューバー */
@@ -243,6 +243,7 @@ img[src="title.PNG"] {
 main a {
     font-weight: bold;
     transition: all 0.3s ease 0s;
+    width: auto;
 }
 
 main a:hover {
@@ -280,6 +281,93 @@ video {
 .caption {
     font-size: 15px;
     font-weight: bold;
+}
+
+/* report */
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.list a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#b01 {
+    padding-top: 60px;
+}
+
+#b01 a{
+    font-size: 28px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+#b02 {
+    padding-top: 60px;
+}
+
+#b02 a{
+    font-size: 28px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+#b03 {
+    padding-top: 60px;
+}
+
+#b03 a{
+    font-size: 28px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+#b04 {
+    padding-top: 60px;
+}
+
+#b04 a{
+    font-size: 28px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+#b05 {
+    padding-top: 60px;
+}
+
+#b05 a{
+    font-size: 25px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+#b06 {
+    padding-top: 60px;
+}
+
+#b06 a{
+    font-size: 28px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+#b07 {
+    padding-top: 60px;
+}
+
+#b07 a{
+    font-size: 28px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
+}
+
+#b08 {
+    padding-top: 60px;
+}
+
+#b08 a{
+    font-size: 28px;
+    background: linear-gradient(transparent 70%, #1e90ff 70%);
 }
 
 /* その他 */
